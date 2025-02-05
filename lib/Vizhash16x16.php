@@ -104,7 +104,7 @@ class Vizhash16x16
         if (($this->getInt() % 2) == 0) {
             $operation = 'h';
         }
-        $image = $this->degrade($image, $op, array($rouge0, $green0, $blue0), array(0, 0, 0));
+        $image = $this->degrade($image, $operation, array($rouge0, $green0, $blue0), array(0, 0, 0));
 
         for ($i = 0; $i < 7; ++$i) {
             $action = $this->getInt();
